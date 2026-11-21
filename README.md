@@ -74,8 +74,7 @@
 ### Step 1: Clone the Repository
 Open your terminal and execute:
 bash
-git clone https://github.com/sahalahmed-work/PF-Lab-Project-Fast_Transit_System.git
-cd PF-Lab-Project-Fast_Transit_System
+git clone https://github.com/saeedmarium12-ui/PF-Lab-Project-Fast_Transit_System.git
 
 
 ### Step 2: Compile the Code
