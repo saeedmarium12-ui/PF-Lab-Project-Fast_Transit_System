@@ -9,37 +9,37 @@
 ## Section B: Features & Test Cases (Execution Scenarios)
 
 ### Case 1: Viewing All Routes & Inspecting Route Pitstops
-*Description:* Tests file reading from routes.txt to display all 46 university routes along with their distances and bus numbers, followed by conditional lookup of specific route pitstops.
-*Inputs:*
-  * Menu Choice: 1
-  * Route ID for stops: 1
-*Expected Output:* Displays all 46 routes formatted with ID, route name, distance in km, and bus number, followed by the specific list of stops for Route ID 1 (Malir Cantt Askari-V to FAST NU).
-*Screenshot:*
+**Description:** Tests file reading from routes.txt to display all 46 university routes along with their distances and bus numbers, followed by conditional lookup of specific route pitstops.
+**Inputs:**
+  * Menu Choice: '1'
+  * Route ID for stops: '1'
+**Expected Output:** Displays all 46 routes formatted with ID, route name, distance in km, and bus number, followed by the specific list of stops for Route ID '1' (Malir Cantt Askari-V to FAST NU).
+**Screenshot:**
   
   ![Case 1](screenshots/case1_execution.png)
 
 ### Case 2: Student Registration & Dynamic Fare Calculation
-*Description:* Validates user data capture into a Student struct, verifies the selected Route ID against routes.txt, and computes the final fare based on distance, membership tier, and payment mode.
-*Inputs:*
-  * Menu Choice: 2
-  * Full Name: Sahal Ahmed
-  * Email: k260564@nu.edu.pk
-  * Contact: 0334-7242500
-  * Route ID: 1
-  * Membership Tier: 2 (PRO)
-  * Payment Mode: 2 (Semesterly Upfront)
-*Expected Output:* Applies the Rs. 2,000 PRO tier fee and 10% semesterly bulk discount, then displays a complete Fare Breakdown Summary showing assigned bus (FAST-01) and final discounted semester fare (Rs. 38565.00).
-*Screenshot:*
+**Description:** Validates user data capture into a Student struct, verifies the selected Route ID against routes.txt, and computes the final fare based on distance, membership tier, and payment mode.
+**Inputs:**
+  * Menu Choice: '2'
+  * Full Name: 'Sahal Ahmed'
+  * Email: 'k260564@nu.edu.pk'
+  * Contact: '0334-7242500'
+  * Route ID: '1'
+  * Membership Tier: '2' (PRO)
+  * Payment Mode: '2' (Semesterly Upfront)
+**Expected Output:** Applies the Rs. 2,000 PRO tier fee and 10% semesterly bulk discount, then displays a complete Fare Breakdown Summary showing assigned bus (FAST-01) and final discounted semester fare (Rs. 38565.00).
+**Screenshot:**
 
   ![Case 2](screenshots/case2_execution.png)
 
 ### Case 3: Saving Student Pass Record & Viewing Saved Records
-*Description:* Tests permanent data persistence by appending the registered student's details to transit_records.txt and reading back all saved records from the file.
-*Inputs:*
+**Description:** Tests permanent data persistence by appending the registered student's details to transit_records.txt and reading back all saved records from the file.
+**Inputs:**
   * Menu Choice: 3 (Save Record)
   * Menu Choice: 4 (View All Saved Student Records)
-*Expected Output:* Displays [Success] Student record for 'Sahal Ahmed' saved permanently to 'transit_records.txt'! for Option 3, and lists all stored student pass records cleanly under SAVED STUDENT PASS RECORDS for Option 4.
-*Screenshot:*
+**Expected Output:** Displays [Success] Student record for 'Sahal Ahmed' saved permanently to 'transit_records.txt'! for Option 3, and lists all stored student pass records cleanly under SAVED STUDENT PASS RECORDS for Option 4.
+**Screenshot:**
   * Saving Record:
     ![Case 3 Part 1](screenshots/case3_part1_save.png)
   * Viewing Records:
@@ -47,13 +47,13 @@
 
 
 ### Case 4: Invalid Input & Unregistered Save Error Handling
-*Description:* Verifies how the program handles invalid menu choices, out-of-range Route IDs, and attempts to save a record before completing registration.
-*Inputs:*
+**Description:** Verifies how the program handles invalid menu choices, out-of-range Route IDs, and attempts to save a record before completing registration.
+**Inputs:**
   * Menu Choice: 9 (Invalid menu option)
   * Menu Choice: 3 (Before registering a student)
   * Route ID: 99 (Out-of-range route during registration)
-*Expected Output:* Displays clear, user-friendly error messages ([Error] Invalid choice! Please select between 1 and 5., [Error] No student registered yet! Please complete Option 2 first., and [Error] Invalid Route ID selected!) without crashing.
-*Screenshot:*
+**Expected Output:** Displays clear, user-friendly error messages ([Error] Invalid choice! Please select between 1 and 5., [Error] No student registered yet! Please complete Option 2 first., and [Error] Invalid Route ID selected!) without crashing.
+**Screenshot:**
   
   * Invalid Menu:
     
@@ -73,17 +73,18 @@
 
 ### Step 1: Clone the Repository
 Open your terminal and execute:
-bash
+```bash
 git clone https://github.com/saeedmarium12-ui/PF-Lab-Project-Fast_Transit_System.git
-
+```
 
 ### Step 2: Compile the Code
-Ensure main.c and routes.txt are in the same directory, then compile using GCC:
-bash
+Ensure 'main.c' and 'routes.txt' are in the same directory, then compile using GCC:
+```bash
 gcc main.c -o fast_transit
-
+```
 
 ### Step 3: Run the Program
-*Windows (Command Prompt):*
-cmd
+**Windows (Command Prompt):**
+```cmd
 fast_transit.exe
+```
