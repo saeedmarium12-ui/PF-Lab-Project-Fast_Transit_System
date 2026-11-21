@@ -14,7 +14,7 @@
   * Menu Choice: '1'
   * Route ID for stops: '1'
 **Expected Output:** Displays all 46 routes formatted with ID, route name, distance in km, and bus number, followed by the specific list of stops for Route ID '1' (Malir Cantt Askari-V to FAST NU).
-**Screenshot:**
+* **Screenshot:**
   
   ![Case 1](screenshots/case1_execution.png)
 
@@ -29,7 +29,7 @@
   * Membership Tier: '2' (PRO)
   * Payment Mode: '2' (Semesterly Upfront)
 **Expected Output:** Applies the Rs. 2,000 PRO tier fee and 10% semesterly bulk discount, then displays a complete Fare Breakdown Summary showing assigned bus (FAST-01) and final discounted semester fare (Rs. 38565.00).
-**Screenshot:**
+* **Screenshot:**
 
   ![Case 2](screenshots/case2_execution.png)
 
@@ -39,7 +39,7 @@
   * Menu Choice: 3 (Save Record)
   * Menu Choice: 4 (View All Saved Student Records)
 **Expected Output:** Displays [Success] Student record for 'Sahal Ahmed' saved permanently to 'transit_records.txt'! for Option 3, and lists all stored student pass records cleanly under SAVED STUDENT PASS RECORDS for Option 4.
-**Screenshot:**
+* **Screenshot:**
   * Saving Record:
     ![Case 3 Part 1](screenshots/case3_part1_save.png)
   * Viewing Records:
@@ -53,7 +53,7 @@
   * Menu Choice: 3 (Before registering a student)
   * Route ID: 99 (Out-of-range route during registration)
 **Expected Output:** Displays clear, user-friendly error messages ([Error] Invalid choice! Please select between 1 and 5., [Error] No student registered yet! Please complete Option 2 first., and [Error] Invalid Route ID selected!) without crashing.
-**Screenshot:**
+*  **Screenshot:**
   
   * Invalid Menu:
     
